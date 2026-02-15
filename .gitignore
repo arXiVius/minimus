@@ -1,0 +1,13 @@
+node_modules/
+venv/
+__pycache__/
+target/
+dist/
+build/
+*.exe
+*.log
+.DS_Store
+test_*/
+minimus_branding.md
+ideas/
+roadmap.md
