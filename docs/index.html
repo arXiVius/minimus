@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>minimus | small tools. big impact.</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📦</text></svg>">
+</head>
+<body>
+
+    <header>
+        <pre class="ascii-logo">
+ _ __ ___  _ _ __ (_)_ __ ___  _   _ ___ 
+| '_ ` _ \| | '_ \| | '_ ` _ \| | | / __|
+| | | | | | | | | | | | | | | | |_| \__ \
+|_| |_| |_|_|_| |_|_|_| |_| |_|\__,_|___/
+        </pre>
+        <p class="tagline">&gt; small tools. big impact. zero bloat.</p>
+    </header>
+
+    <main>
+        <!-- Hero: Terminal -->
+        <section id="hero">
+            <div class="terminal-window">
+                <div class="terminal-header">
+                    <span class="dot red"></span>
+                    <span class="dot yellow"></span>
+                    <span class="dot green"></span>
+                    <span class="title">user@minimus:~</span>
+                </div>
+                <div class="terminal-body" id="terminal-content">
+                    <!-- Javascript will type here -->
+                    <span class="cursor">_</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Comparison: Bloat vs Minimus -->
+        <section id="comparison">
+            <div class="split-container">
+                <div class="split bloat">
+                    <h3>[ bloat ]</h3>
+                    <div class="content">
+                        <p class="log-messy">npm WARN deprecated...</p>
+                        <p class="log-messy">gyp ERR! find Python...</p>
+                        <p class="log-messy">Downloading 450MB...</p>
+                        <div class="heavy-icon">📦 150MB</div>
+                    </div>
+                </div>
+                <div class="split minimus">
+                    <h3>[ minimus ]</h3>
+                    <div class="content">
+                        <p class="log-clean"><span class="success">[+]</span> scanned project</p>
+                        <p class="log-clean"><span class="success">[+]</span> cleaning...</p>
+                        <p class="log-clean"><span class="success">[+]</span> complete (0.2s)</p>
+                        <div class="light-icon">✨ 0MB</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tools Grid -->
+        <section id="tools">
+            <h2>available tools</h2>
+            <div class="grid">
+                <div class="card">
+                    <h3>bootstrap</h3>
+                    <p>universal project setup. detects node/python/rust/go and builds it.</p>
+                </div>
+                <div class="card">
+                    <h3>cleanall</h3>
+                    <p>nuclear artifact cleaner. reclaims disk space instantly.</p>
+                </div>
+                <div class="card">
+                    <h3>score</h3>
+                    <p>complexity heuristics. gamified code health check.</p>
+                </div>
+                <div class="card">
+                    <h3>guard</h3>
+                    <p>pre-commit safety. catches secrets and large files.</p>
+                </div>
+                <div class="card">
+                    <h3>doctor</h3>
+                    <p>environment health check. finds missing tools.</p>
+                </div>
+                <div class="card">
+                    <h3>depsize</h3>
+                    <p>visualize dependency weight. see what's heavy.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Install -->
+        <section id="install">
+            <h2>install</h2>
+            <div class="install-block">
+                <div class="tab-header">
+                    <button class="tab active" onclick="showTab('linux')">linux / macos</button>
+                    <button class="tab" onclick="showTab('windows')">windows</button>
+                </div>
+                <div class="code-block" id="code-linux">
+                    <code>curl -sL https://raw.githubusercontent.com/user/minimus/main/install.sh | bash</code>
+                    <button class="copy-btn" onclick="copyCode('code-linux')">copy</button>
+                </div>
+                <div class="code-block hidden" id="code-windows">
+                    <code>iwr -useb https://raw.githubusercontent.com/user/minimus/main/install.ps1 | iex</code>
+                    <button class="copy-btn" onclick="copyCode('code-windows')">copy</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>minimus is open source (MIT).</p>
+        <p>&gt; <a href="https://github.com/user/minimus">github</a></p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
